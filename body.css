@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(240, 230, 230);
+  color: rgb(2, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgba(17, 1, 1, 0.966);
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 0.4px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgba(17, 1, 1, 0.966);
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 0.4px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* New styles for the members section */
+#members {
+  font-family: Arial, sans-serif; /* Default font for the section */
+}
+
+#members h1 {
+  text-align: center;
+  font-family: 'Georgia', serif; /* Optional custom font for the heading */
+  margin-bottom: 20px;
+}
+
+.member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.member img {
+  border-radius: 50%; /* Makes the image circular */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+.member .name {
+  font-weight: 900; /* Use a very bold weight */
+  font-family: 'Arial Black', 'Courier New', Courier, monospace; /* Add bold-specific fonts */
+  color: #333; /* Dark gray color */
+  display: block; /* Places the name on a new line */
+  margin-top: 10px;
+}

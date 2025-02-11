@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consilium - Register</title>
+  <link rel="stylesheet" href="body.css">
+  <script defer src="java.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Register for Counseling</h1>
+  </header>
+  <section>
+    <form id="registerForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="class">Class:</label>
+      <input type="text" id="class" name="class" required>
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department" required>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+      <label for="schedule">Time Schedule:</label>
+      <select id="schedule" name="schedule" required>
+        <option value="9am-10am">9:30 AM - 10:15 AM</option>
+        <option value="10am-11am">10:30 AM - 11:15 AM</option>
+        <option value="11am-12pm">11:30 AM - 12:15 PM</option>
+        <option value="9am-10am">1:30 AM - 2:15 AM</option>
+        <option value="10am-11am">2:30 AM - 3:15 AM</option>
+        <option value="11am-12pm">3:30 AM - 4:15 PM</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</body>
+</html>

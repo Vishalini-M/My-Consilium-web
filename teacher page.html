@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consilium - Teacher</title>
+  <link rel="stylesheet" href="body.css">
+</head>
+<body>
+  <header>
+    <h1>Registered Students</h1>
+  </header>
+  <section id="studentList">
+    <!-- This will be dynamically populated using JavaScript -->
+  </section>
+  <script>
+    const registeredStudents = JSON.parse(localStorage.getItem('students')) || [];
+    const studentList = document.getElementById('studentList');
+
+    if (registeredStudents.length > 0) {
+      registeredStudents.forEach(student => {
+        const studentDetails = document.createElement('div');
+        studentDetails.innerHTML = `
+          <p>Name: ${student.name}</p>
+          <p>Class: ${student.class}</p>
+          <p>Department: ${student.department}</p>
+          <p>Phone: ${student.phone}</p>
+          <p>Date: ${student.date}</p>
+          <p>Schedule: ${student.schedule}</p>
+          <hr>
+        `;
+        studentList.appendChild(studentDetails);
+      });
+    } else {
+      studentList.innerHTML = '<p>No students have registered yet.</p>';
+    }
+  </script>
+</body>
+</html>
